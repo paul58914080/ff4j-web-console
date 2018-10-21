@@ -7,7 +7,7 @@ import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {Feature} from '../../models/Feature';
 
 @Component({
-    selector: 'test-feature-card',
+    selector: 'ff4j-test-feature-card',
     template: `<ff4j-feature-card [feature]='feature'></ff4j-feature-card>`
 })
 class TestFeatureCardComponent {

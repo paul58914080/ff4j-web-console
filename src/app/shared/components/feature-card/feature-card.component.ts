@@ -7,7 +7,7 @@ import {Feature} from '../../models/Feature';
   styleUrls: [ './feature-card.component.scss' ]
 })
 export class FeatureCardComponent implements OnInit {
-  @Input("feature") feature: Feature;
+  @Input() feature: Feature;
 
   constructor() {
   }
