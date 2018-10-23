@@ -9,7 +9,6 @@ import {AgGridModule} from 'ag-grid-angular';
 import {FeatureCardModule} from '../../shared/components/feature-card/feature-card.module';
 import {Property} from '../../shared/models/Property';
 
-
 describe('FeaturesComponent', () => {
   let component: FeaturesComponent;
   let fixture: ComponentFixture<FeaturesComponent>;
@@ -18,11 +17,7 @@ describe('FeaturesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-          HttpClientModule,
-          FeatureCardModule,
-          LoggerTestingModule,
-          AgGridModule.withComponents([])],
+      imports: [HttpClientModule, FeatureCardModule, LoggerTestingModule, AgGridModule.withComponents([])],
       declarations: [FeaturesComponent],
       providers: [FeatureService]
     })
