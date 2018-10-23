@@ -1,56 +1,53 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-
 import {FeatureCardComponent} from './feature-card.component';
-import {CommonModule} from '@angular/common';
-import {MatButtonModule, MatCardModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
-import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {Component} from '@angular/core';
 import {Feature} from '../../models/Feature';
+import {initContext, TestContext} from '../../../../testing/test.context';
+import {MatButtonModule, MatCardModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
 
+const mockFeature1: Feature = {
+    uid: 'Feature_UID1',
+    description: `Feature Card1 Description`,
+    group: 'Group Name1',
+    enable: false,
+    permissions: ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ADMIN', 'ROLE_USER']
+};
+
+const mockFeature2: Feature = {
+    uid: 'Feature_UID2',
+    description: `Feature Card2 Description`,
+    group: 'Group Name2',
+    enable: false,
+    permissions: ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ADMIN', 'ROLE_USER']
+};
 @Component({
-    selector: 'ff4j-test-feature-card',
     template: `<ff4j-feature-card [feature]='feature'></ff4j-feature-card>`
 })
-class TestFeatureCardComponent {
-  feature: Feature = {
-      uid: 'Feature_UID',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.`,
-      group: 'Group Name',
-      enable: false,
-      permissions: [ 'ROLE_ADMIN', 'ROLE_USER', 'ROLE_ADMIN', 'ROLE_USER' ]
-  };
+class TesteeFeatureCardComponent {
+    feature: Feature = mockFeature1;
 }
-describe('FeatureCardComponent', () => {
-  let component: TestFeatureCardComponent;
-  let fixture: ComponentFixture<TestFeatureCardComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        CommonModule,
+describe('FeatureCardComponent', () => {
+    type Context = TestContext<FeatureCardComponent, TesteeFeatureCardComponent>;
+    const moduleMetaData: any = {
         MatCardModule,
         MatSlideToggleModule,
         MatButtonModule,
         MatIconModule
-      ],
-      declarations: [FeatureCardComponent, TestFeatureCardComponent],
-      schemas: [
-        CUSTOM_ELEMENTS_SCHEMA
-      ]
-    })
-      .compileComponents();
-  }));
+    };
+    initContext(FeatureCardComponent, TesteeFeatureCardComponent, moduleMetaData);
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(TestFeatureCardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    it('should create', function (this: Context) {
+        this.fixture.detectChanges();
+        expect(this.hostComponent).toBeTruthy();
+        expect(this.testedComponent).toBeTruthy();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should have got the input value for feature', function(this: Context) {
+        this.fixture.detectChanges();
+        expect(this.testedComponent.feature).toBe(mockFeature1);
+        // on change should apply
+        this.hostComponent.feature = mockFeature2;
+        this.detectChanges();
+        expect(this.testedComponent.feature).toBe(mockFeature2);
+    });
 });
