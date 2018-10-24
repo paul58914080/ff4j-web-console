@@ -4,26 +4,17 @@ import {Feature} from '../../models/Feature';
 import {initContext, TestContext} from '../../../../testing/test.context';
 import {MatButtonModule, MatCardModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
 
-const mockFeature1: Feature = {
-    uid: 'Feature_UID1',
-    description: `Feature Card1 Description`,
-    group: 'Group Name1',
-    enable: false,
-    permissions: ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ADMIN', 'ROLE_USER']
-};
-
-const mockFeature2: Feature = {
-    uid: 'Feature_UID2',
-    description: `Feature Card2 Description`,
-    group: 'Group Name2',
-    enable: false,
-    permissions: ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ADMIN', 'ROLE_USER']
-};
 @Component({
     template: `<ff4j-feature-card [feature]='feature'></ff4j-feature-card>`
 })
 class TesteeFeatureCardComponent {
-    feature: Feature = mockFeature1;
+    feature: Feature = {
+        uid: 'Feature_UID',
+        description: `Feature Card Description`,
+        group: 'Group Name',
+        enable: false,
+        permissions: ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ADMIN', 'ROLE_USER']
+    };
 }
 
 describe('FeatureCardComponent', () => {
@@ -44,10 +35,10 @@ describe('FeatureCardComponent', () => {
 
     it('should have got the input value for feature', function(this: Context) {
         this.fixture.detectChanges();
-        expect(this.testedComponent.feature).toBe(mockFeature1);
+        expect(this.testedComponent.feature.enable).toBeFalsy();
         // on change should apply
-        this.hostComponent.feature = mockFeature2;
+        this.hostComponent.feature.enable = true;
         this.detectChanges();
-        expect(this.testedComponent.feature).toBe(mockFeature2);
+        expect(this.testedComponent.feature.enable).toBeTruthy();
     });
 });
