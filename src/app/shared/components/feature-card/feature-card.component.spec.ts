@@ -35,7 +35,11 @@ describe('FeatureCardComponent', () => {
 
     it('should have got the input value for feature', function(this: Context) {
         this.fixture.detectChanges();
+        expect(this.testedComponent.feature.uid).toBe('Feature_UID');
+        expect(this.testedComponent.feature.description).toBe(`Feature Card Description`);
+        expect(this.testedComponent.feature.group).toBe('Group Name');
         expect(this.testedComponent.feature.enable).toBeFalsy();
+        expect(this.testedComponent.feature.permissions.length).toEqual(4);
         // on change should apply
         this.hostComponent.feature.enable = true;
         this.detectChanges();
