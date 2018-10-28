@@ -24,7 +24,7 @@ export class FeaturesComponent implements OnInit {
       this.gridOptions = {
           headerHeight: 0,
           columnDefs: [],
-          rowHeight: 155,
+          rowHeight: 160,
           suppressHorizontalScroll: true,
           fullWidthCellRenderer: 'fullWidthCellRenderer',
           frameworkComponents: {
