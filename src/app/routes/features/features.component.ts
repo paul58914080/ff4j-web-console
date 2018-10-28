@@ -15,10 +15,10 @@ import {FeatureRenderer} from './feature.renderer';
 export class FeaturesComponent implements OnInit {
 
   features: Feature[];
-  private gridApi: GridApi;
-  private columnApi: ColumnApi;
-  private gridOptions: GridOptions;
-  private rowData: Feature[];
+  gridApi: GridApi;
+  columnApi: ColumnApi;
+  gridOptions: GridOptions;
+  rowData: Feature[];
 
   constructor(private featureService: FeatureService, private logger: NGXLogger) {
       this.gridOptions = {
