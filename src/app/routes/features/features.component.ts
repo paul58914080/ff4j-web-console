@@ -53,7 +53,7 @@ export class FeaturesComponent implements OnInit {
     });
   }
 
-  private onGridReady(params) {
+  onGridReady(params) {
     this.gridApi = params.api;
     this.columnApi = params.columnApi;
     this.gridApi.sizeColumnsToFit();
