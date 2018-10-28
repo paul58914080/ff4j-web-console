@@ -10,7 +10,7 @@ import {Feature} from '../../shared/models/Feature';
                     </ff4j-feature-card>
                </div>`
 })
-export class FeatureRenderer implements ICellRenderer {
+export class FeatureRendererComponent implements ICellRenderer {
     feature: Feature;
 
     agInit(params: ICellRendererParams): void {

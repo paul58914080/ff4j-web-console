@@ -8,7 +8,7 @@ import {FeaturesComponent} from './features.component';
 import {FeatureService} from '../../shared/services/feature.service';
 import {FeatureCardModule} from '../../shared/components/feature-card/feature-card.module';
 import {Property} from '../../shared/models/Property';
-import {FeatureRenderer} from './feature.renderer';
+import {FeatureRendererComponent} from './feature-renderer.component';
 
 describe('FeaturesComponent', () => {
   let component: FeaturesComponent;
@@ -18,8 +18,8 @@ describe('FeaturesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule, FeatureCardModule, LoggerTestingModule, AgGridModule.withComponents([FeatureRenderer])],
-      declarations: [FeaturesComponent, FeatureRenderer],
+      imports: [HttpClientModule, FeatureCardModule, LoggerTestingModule, AgGridModule.withComponents([FeatureRendererComponent])],
+      declarations: [FeaturesComponent, FeatureRendererComponent],
       providers: [FeatureService]
     })
       .compileComponents();

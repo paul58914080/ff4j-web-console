@@ -4,16 +4,16 @@ import {FeaturesComponent} from './features.component';
 import {FeatureService} from '../../shared/services/feature.service';
 import {AgGridModule} from 'ag-grid-angular';
 import {FeatureCardModule} from '../../shared/components/feature-card/feature-card.module';
-import {FeatureRenderer} from './feature.renderer';
+import {FeatureRendererComponent} from './feature-renderer.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    AgGridModule.withComponents([FeatureRenderer]),
+    AgGridModule.withComponents([FeatureRendererComponent]),
     FeatureCardModule
   ],
   declarations: [
-    FeaturesComponent, FeatureRenderer
+    FeaturesComponent, FeatureRendererComponent
   ],
   providers: [FeatureService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

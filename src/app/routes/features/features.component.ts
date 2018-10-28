@@ -5,7 +5,7 @@ import {FeatureService} from '../../shared/services/feature.service';
 import {Feature} from '../../shared/models/Feature';
 import {NGXLogger} from 'ngx-logger';
 import MapUtils from '../../shared/utils/map.utils';
-import {FeatureRenderer} from './feature.renderer';
+import {FeatureRendererComponent} from './feature-renderer.component';
 
 @Component({
   selector: 'ff4j-features',
@@ -28,7 +28,7 @@ export class FeaturesComponent implements OnInit {
           suppressHorizontalScroll: true,
           fullWidthCellRenderer: 'fullWidthCellRenderer',
           frameworkComponents: {
-              fullWidthCellRenderer: FeatureRenderer
+              fullWidthCellRenderer: FeatureRendererComponent
           },
           isFullWidthCell: (rowNode: RowNode) => true
       };
