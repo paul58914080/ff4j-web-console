@@ -11,7 +11,7 @@ import {Feature} from '../../shared/models/Feature';
                </div>`
 })
 export class FeatureRenderer implements ICellRenderer {
-    private feature: Feature;
+    feature: Feature;
 
     agInit(params: ICellRendererParams): void {
         this.feature = params.data;
