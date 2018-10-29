@@ -105,7 +105,6 @@ describe('FeaturesComponent', () => {
     fixture.detectChanges();
     expect(featureService.getFeatures).toHaveBeenCalledTimes(1);
     expect(component.features).toBeDefined();
-    expect(component.rowData).toBeDefined();
     expect(JSON.stringify(component.features)).toEqual(JSON.stringify(expectedData));
     component.features.forEach((feature) => {
       if (feature.customProperties) {
@@ -124,7 +123,20 @@ describe('FeaturesComponent', () => {
   });
 
   it('should initialise ag-grid', () => {
+      const mockParams = {
+          api: {
+              context: null,
+              componentResolver: null,
+              gridOptionsWrapper: null
+          },
+          columnApi: null
+      };
+    component.onGridReady(mockParams);
+    fixture.detectChanges();
     expect(component.gridOptions.headerHeight).toEqual(0);
     expect(component.gridOptions.columnDefs.length).toEqual(0);
+    expect(component.gridApi).toBeDefined();
+    expect(component.columnApi).toBeNull();
+
   });
 });

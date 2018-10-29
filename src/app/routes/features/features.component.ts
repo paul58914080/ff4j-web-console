@@ -18,7 +18,6 @@ export class FeaturesComponent implements OnInit {
   gridApi: GridApi;
   columnApi: ColumnApi;
   gridOptions: GridOptions;
-  rowData: Feature[];
 
   constructor(private featureService: FeatureService, private logger: NGXLogger) {
       this.gridOptions = {
@@ -37,7 +36,6 @@ export class FeaturesComponent implements OnInit {
   ngOnInit() {
     this.featureService.getFeatures().subscribe((response) => {
       this.features = response;
-      this.rowData = response;
       this.initProperties();
       this.logger.debug('Features : ' + JSON.stringify(this.features));
     }, (error) => {
@@ -56,6 +54,5 @@ export class FeaturesComponent implements OnInit {
   onGridReady(params) {
     this.gridApi = params.api;
     this.columnApi = params.columnApi;
-    this.gridApi.sizeColumnsToFit();
   }
 }
