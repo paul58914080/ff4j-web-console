@@ -3,7 +3,6 @@ import {Component} from '@angular/core';
 import {Feature} from '../../models/Feature';
 import {initContext, TestContext} from '../../../../testing/test.context';
 import {MatButtonModule, MatCardModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
-import {LoggerTestingModule} from 'ngx-logger';
 import {Property} from '../../models/Property';
 
 @Component({
@@ -28,8 +27,7 @@ describe('FeatureCardComponent', () => {
       MatCardModule,
       MatSlideToggleModule,
       MatButtonModule,
-      MatIconModule,
-      LoggerTestingModule
+      MatIconModule
     ]
   };
 
@@ -54,6 +52,11 @@ describe('FeatureCardComponent', () => {
     expect(this.testedComponent.feature.enable).toBeTruthy();
   });
 
+  it('should throw error when feature is undefined', function (this: Context) {
+    this.testedComponent.feature = undefined;
+    expect(() => this.testedComponent.ngOnInit()).toThrow(new Error('feature property cannot be undefined'));
+  });
+
   it('should be able to format and show customProperties in key value', function (this: Context) {
     // The customProperties needs to be transformed to a Map
     const properties = new Map<string, Property>();
@@ -72,4 +75,5 @@ describe('FeatureCardComponent', () => {
     resultValues = this.testedComponent.getPropertiesValues(testee);
     expect(resultValues).toEqual([]);
   });
+
 });
