@@ -138,7 +138,7 @@ describe('FeaturesComponent', () => {
 
   it('should invoke onFilterTextBoxChanged on triggering input', () => {
     spyOn(component, 'onFilterTextBoxChanged').and.callThrough();
-    let input = fixture.debugElement.query(By.css('input.quick-filter')).nativeElement;
+    const input = fixture.debugElement.query(By.css('input.quick-filter')).nativeElement;
     input.dispatchEvent(new Event('input'));
     expect(component.onFilterTextBoxChanged).toHaveBeenCalled();
   });
