@@ -1,8 +1,13 @@
+<div class="container-fluid">
+    <mat-form-field class="example-full-width">
+        <input class="quick-filter" matInput id="filter-text-box" type="text" placeholder="Filter"
+               [(ngModel)]="filter" (input)="onFilterTextBoxChanged()"/>
+    </mat-form-field>
+</div>
 <div class='ff4j-features'>
-     <ag-grid-angular
-         class="h-100 w-100 ag-theme-material"
-         [rowData]="features"
-         [gridOptions]="gridOptions"
-         (gridReady)="onGridReady($event)">
-     </ag-grid-angular>
+    <ag-grid-angular
+            class="h-100 w-100 ag-theme-material"
+            [rowData]="features"
+            [gridOptions]="gridOptions">
+    </ag-grid-angular>
 </div>

@@ -5,12 +5,16 @@ import {FeatureService} from '../../shared/services/feature.service';
 import {AgGridModule} from 'ag-grid-angular';
 import {FeatureCardModule} from '../../shared/components/feature-card/feature-card.module';
 import {FeatureRendererComponent} from './feature-renderer.component';
+import {MatInputModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     AgGridModule.withComponents([FeatureRendererComponent]),
-    FeatureCardModule
+    FeatureCardModule,
+    MatInputModule,
+    FormsModule
   ],
   declarations: [
     FeaturesComponent, FeatureRendererComponent

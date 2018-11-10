@@ -9,6 +9,9 @@ import {FeatureService} from '../../shared/services/feature.service';
 import {FeatureCardModule} from '../../shared/components/feature-card/feature-card.module';
 import {Property} from '../../shared/models/Property';
 import {FeatureRendererComponent} from './feature-renderer.component';
+import {MatInputModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('FeaturesComponent', () => {
   let component: FeaturesComponent;
@@ -18,7 +21,15 @@ describe('FeaturesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule, FeatureCardModule, LoggerTestingModule, AgGridModule.withComponents([FeatureRendererComponent])],
+      imports: [
+          HttpClientModule,
+          FeatureCardModule,
+          MatInputModule,
+          FormsModule,
+          BrowserAnimationsModule,
+          LoggerTestingModule,
+          AgGridModule.withComponents([FeatureRendererComponent])
+      ],
       declarations: [FeaturesComponent, FeatureRendererComponent],
       providers: [FeatureService]
     })
@@ -120,23 +131,5 @@ describe('FeaturesComponent', () => {
     fixture.detectChanges();
     expect(featureService.getFeatures).toHaveBeenCalledTimes(1);
     expect(logger.error).toHaveBeenCalledWith('Unable to fetch features', error);
-  });
-
-  it('should initialise ag-grid', () => {
-      const mockParams = {
-          api: {
-              context: null,
-              componentResolver: null,
-              gridOptionsWrapper: null
-          },
-          columnApi: null
-      };
-    component.onGridReady(mockParams);
-    fixture.detectChanges();
-    expect(component.gridOptions.headerHeight).toEqual(0);
-    expect(component.gridOptions.columnDefs.length).toEqual(0);
-    expect(component.gridApi).toBeDefined();
-    expect(component.columnApi).toBeNull();
-
   });
 });

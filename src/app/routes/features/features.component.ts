@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ColumnApi, GridApi, GridOptions, RowNode} from 'ag-grid-community';
+import {ColumnApi, GridApi, GridOptions, RowNode, ColDef} from 'ag-grid-community';
 
 import {FeatureService} from '../../shared/services/feature.service';
 import {Feature} from '../../shared/models/Feature';
@@ -15,21 +15,55 @@ import {FeatureRendererComponent} from './feature-renderer.component';
 export class FeaturesComponent implements OnInit {
 
   features: Feature[];
+  filter: string;
   gridApi: GridApi;
   columnApi: ColumnApi;
   gridOptions: GridOptions;
 
   constructor(private featureService: FeatureService, private logger: NGXLogger) {
+      const colDefs: ColDef[] = [
+          {
+              field: 'uid',
+              getQuickFilterText: (params) => {
+                  return params.value;
+              }
+          },
+          {
+              field: 'description',
+              getQuickFilterText:  (params) => {
+                  return params.value;
+              }
+          },
+          {
+              field: 'group',
+              getQuickFilterText:  (params) => {
+                  return params.value;
+              }
+          },
+          {
+              field: 'permissions',
+              getQuickFilterText:  (params) => {
+                  return params.value;
+              }
+          }
+      ];
       this.gridOptions = {
           headerHeight: 0,
-          columnDefs: [],
+          columnDefs: colDefs,
           rowHeight: 160,
           suppressHorizontalScroll: true,
+          enableFilter: true,
           fullWidthCellRenderer: 'fullWidthCellRenderer',
           frameworkComponents: {
               fullWidthCellRenderer: FeatureRendererComponent
           },
-          isFullWidthCell: (rowNode: RowNode) => true
+          isFullWidthCell: (rowNode: RowNode) => true,
+          onGridReady: (params) => {
+              this.gridApi = params.api;
+              this.columnApi = params.columnApi;
+          },
+          pagination: true,
+          paginationPageSize: 5
       };
   }
 
@@ -51,8 +85,7 @@ export class FeaturesComponent implements OnInit {
     });
   }
 
-  onGridReady(params) {
-    this.gridApi = params.api;
-    this.columnApi = params.columnApi;
+  onFilterTextBoxChanged() {
+      this.gridOptions.api.setQuickFilter(this.filter);
   }
 }
