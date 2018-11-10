@@ -20,31 +20,25 @@ export class FeaturesComponent implements OnInit {
   columnApi: ColumnApi;
   gridOptions: GridOptions;
 
+  getQuickFilter = (params) => params.value;
+
   constructor(private featureService: FeatureService, private logger: NGXLogger) {
       const colDefs: ColDef[] = [
           {
               field: 'uid',
-              getQuickFilterText: (params) => {
-                  return params.value;
-              }
+              getQuickFilterText: this.getQuickFilter
           },
           {
               field: 'description',
-              getQuickFilterText:  (params) => {
-                  return params.value;
-              }
+              getQuickFilterText: this.getQuickFilter
           },
           {
               field: 'group',
-              getQuickFilterText:  (params) => {
-                  return params.value;
-              }
+              getQuickFilterText: this.getQuickFilter
           },
           {
               field: 'permissions',
-              getQuickFilterText:  (params) => {
-                  return params.value;
-              }
+              getQuickFilterText: this.getQuickFilter
           }
       ];
       this.gridOptions = {
