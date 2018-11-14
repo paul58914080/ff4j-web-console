@@ -7,6 +7,7 @@ import {FeatureCardModule} from '../../shared/components/feature-card/feature-ca
 import {FeatureRendererComponent} from './feature-renderer.component';
 import {MatInputModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
+import {PaginatorModule} from '../../shared/components/paginator/paginator.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import {FormsModule} from '@angular/forms';
     AgGridModule.withComponents([FeatureRendererComponent]),
     FeatureCardModule,
     MatInputModule,
+    PaginatorModule,
     FormsModule
   ],
   declarations: [

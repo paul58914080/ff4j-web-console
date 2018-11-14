@@ -13,6 +13,7 @@ import {MatInputModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {By} from '@angular/platform-browser';
+import {PaginatorModule} from '../../shared/components/paginator/paginator.module';
 
 describe('FeaturesComponent', () => {
   let component: FeaturesComponent;
@@ -25,6 +26,7 @@ describe('FeaturesComponent', () => {
       imports: [
           HttpClientModule,
           FeatureCardModule,
+          PaginatorModule,
           MatInputModule,
           FormsModule,
           BrowserAnimationsModule,
