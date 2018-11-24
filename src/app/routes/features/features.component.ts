@@ -71,13 +71,11 @@ export class FeaturesComponent implements OnInit {
   }
 
   notifyPaginationService() {
-      if (this.gridApi) {
-          this.paginatorService.setPaginationInfo({
-            pageSize: this.pageSize,
-            totalItems: this.features.length,
-            gridApi: this.gridApi
-        });
-    }
+      this.paginatorService.setPaginationInfo({
+          pageSize: this.pageSize,
+          totalItems: this.features.length,
+          gridApi: this.gridApi
+      });
   }
 
   ngOnInit() {
