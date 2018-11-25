@@ -1,7 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {MatPaginatorModule} from '@angular/material';
 
-import {PaginatorComponent} from './paginator.component';
+import {PaginatorComponent, PaginatorService} from './index';
 
 describe('PaginatorComponent', () => {
     let component: PaginatorComponent;
@@ -10,7 +10,8 @@ describe('PaginatorComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [MatPaginatorModule],
-            declarations: [PaginatorComponent]
+            declarations: [PaginatorComponent],
+            providers: [PaginatorService]
         })
             .compileComponents();
     }));

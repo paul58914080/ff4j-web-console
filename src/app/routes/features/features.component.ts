@@ -6,7 +6,7 @@ import {Feature} from '../../shared/models/Feature';
 import {NGXLogger} from 'ngx-logger';
 import MapUtils from '../../shared/utils/map.utils';
 import {FeatureRendererComponent} from './feature-renderer.component';
-import {PaginatorService} from '../../shared/services/paginator.service';
+import {PaginatorService} from '../../shared/components/paginator/paginator.service';
 
 @Component({
   selector: 'ff4j-features',
@@ -19,7 +19,6 @@ export class FeaturesComponent implements OnInit {
   filter: string;
   gridApi: GridApi;
   columnApi: ColumnApi;
-  pageSize = 2;
   gridOptions: GridOptions;
 
   getQuickFilter = (params) => params.value;
@@ -62,7 +61,7 @@ export class FeaturesComponent implements OnInit {
               this.columnApi = params.columnApi;
           },
           pagination: true,
-          paginationPageSize: this.pageSize,
+          paginationAutoPageSize: true,
           onPaginationChanged: (params) => {
               this.gridApi = params.api;
               this.notifyPaginationService();
@@ -72,8 +71,8 @@ export class FeaturesComponent implements OnInit {
 
   notifyPaginationService() {
       this.paginatorService.setPaginationInfo({
-          pageSize: this.pageSize,
-          totalItems: this.features.length,
+          pageSize: this.gridApi.paginationGetPageSize(),
+          totalItems: this.gridApi.paginationGetRowCount(),
           gridApi: this.gridApi
       });
   }
