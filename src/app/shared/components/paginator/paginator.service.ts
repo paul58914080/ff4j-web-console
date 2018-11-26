@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import {distinctUntilChanged} from 'rxjs/operators';
 
-import {Paginator} from './paginator';
+import {Paginator} from './index';
 
 @Injectable()
 export class PaginatorService {

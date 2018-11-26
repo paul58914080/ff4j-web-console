@@ -6,7 +6,7 @@ import {Feature} from '../../shared/models/Feature';
 import {NGXLogger} from 'ngx-logger';
 import MapUtils from '../../shared/utils/map.utils';
 import {FeatureRendererComponent} from './feature-renderer.component';
-import {PaginatorService} from '../../shared/components/paginator/paginator.service';
+import {PaginatorService} from '../../shared/components/paginator';
 
 @Component({
   selector: 'ff4j-features',
