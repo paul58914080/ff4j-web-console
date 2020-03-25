@@ -7,5 +7,8 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [FeaturesComponent],
   imports: [CommonModule, BrowserModule],
   entryComponents: [FeaturesComponent],
+  exports: [
+    FeaturesComponent
+  ]
 })
 export class FeaturesModule {}
