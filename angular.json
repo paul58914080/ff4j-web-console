@@ -216,7 +216,7 @@
               "projects/ff4j-features/src/favicon.ico",
               "projects/ff4j-features/src/assets"
             ],
-            "styles": ["projects/ff4j-features/src/styles.scss"],
+            "styles": ["src/styles.scss"],
             "scripts": [],
             "codeCoverage": true
 
