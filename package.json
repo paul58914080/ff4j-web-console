@@ -26,14 +26,17 @@
     "build:features-element": "ng build ff4j-features --prod --output-hashing none && node build-elements/ff4j-features.js",
     "build:properties-element": "ng build ff4j-properties --prod --output-hashing none && node build-elements/ff4j-properties.js",
     "build:dashboard-element": "ng build ff4j-dashboard --prod --output-hashing none && node build-elements/ff4j-dashboard.js",
-    "test": "ng test",
-    "test:once": "ng test --watch=false",
+    "test": "ng test --watch=false",
+    "test:ff4j-features": "ng test ff4j-features --watch=false",
+    "test:all": "run-s test test:ff4j-features",
     "e2e": "ng e2e",
     "mock:server": "json-server --watch mock/data.json",
     "lint": "ng lint",
     "lint:html": "htmlhint --config lint/.htmlhintrc src/app/**/*.html",
     "lint:styles": "stylelint --config lint/.stylelintrc.json src/app/**/*.scss",
-    "lint:all": "run-p lint lint:html lint:styles",
+    "lint:html:ff4j-features": "htmlhint --config lint/.htmlhintrc projects/ff4j-features/src/**/*.html",
+    "lint:styles:ff4j-features": "stylelint --config lint/.stylelintrc.json projects/ff4j-features/**/*.scss",
+    "lint:all": "run-p lint lint:html lint:styles lint:html:ff4j-features lint:styles:ff4j-features",
     "format:prettier": "pretty-quick --staged",
     "format:all": "run-s lint:all format:prettier"
   },
@@ -95,7 +98,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run format:all",
-      "pre-push": "npm run test:once"
+      "pre-push": "npm run test:all"
     }
   }
 }
