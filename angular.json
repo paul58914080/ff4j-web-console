@@ -133,7 +133,7 @@
       },
       "root": "projects/ff4j-features",
       "sourceRoot": "projects/ff4j-features/src",
-      "prefix": "ff4j-features",
+      "prefix": "ff4j",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
@@ -217,7 +217,9 @@
               "projects/ff4j-features/src/assets"
             ],
             "styles": ["projects/ff4j-features/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "codeCoverage": true
+
           }
         },
         "lint": {
