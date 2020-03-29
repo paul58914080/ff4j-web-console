@@ -184,7 +184,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ff4j-features:build"
+            "browserTarget": "ff4j-features:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -300,7 +301,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ff4j-properties:build"
+            "browserTarget": "ff4j-properties:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -416,7 +418,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ff4j-dashboards:build"
+            "browserTarget": "ff4j-dashboards:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
