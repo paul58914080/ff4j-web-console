@@ -1,23 +1,22 @@
+---
+name: PULL_REQUEST_TEMPLATE
+about: To be used for pull requests
+title: '[PR]'
+labels: ':speech_balloon: code review'
+assignees: paul58914080
+---
+
 # Description
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+<!-- Description about this pull request -->
 
-Fixes # (issue)
-
-## Type of change
-
-Please check options that are relevant.
-
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
-
+Closes : <!-- refer the github issue. Ex: #084-->
 
 # Checklist:
 
-- [ ] My code follows the style guidelines of this project
+- [ ] My code follows the contribution guidelines of this project
 - [ ] I have performed a self-review of my own code
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
+- [ ] My commits follow [conventional commit message guidelines](https://www.conventionalcommits.org/en/v1.0.0/)
