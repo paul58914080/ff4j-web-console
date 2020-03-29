@@ -2,10 +2,10 @@ import { browser, by, element } from 'protractor';
 
 export class AppPage {
   navigateTo(): Promise<unknown> {
-    return browser.get(browser.baseUrl) as Promise<unknown>;
+    return browser.get(browser.baseUrl + '/properties') as Promise<unknown>;
   }
 
   getTitleText(): Promise<string> {
-    return element(by.css('ff4j-properties button')).getText() as Promise<string>;
+    return element(by.tagName('h4')).getText() as Promise<string>;
   }
 }
