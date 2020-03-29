@@ -439,7 +439,8 @@
             "karmaConfig": "projects/ff4j-dashboards/karma.conf.js",
             "assets": ["projects/ff4j-dashboards/src/favicon.ico", "projects/ff4j-dashboards/src/assets"],
             "styles": ["projects/ff4j-dashboards/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "codeCoverage": true
           }
         },
         "lint": {
