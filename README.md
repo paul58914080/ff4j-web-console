@@ -1,5 +1,12 @@
 # FF4J Web Console [![Build Status](https://travis-ci.com/devs-from-matrix/ff4j-web-console.svg?branch=master)](https://travis-ci.com/devs-from-matrix/ff4j-web-console) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7448d01e1b5f4338881454d265034cca)](https://www.codacy.com/gh/devs-from-matrix/ff4j-web-console?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devs-from-matrix/ff4j-web-console&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/devs-from-matrix/ff4j-web-console/branch/master/graph/badge.svg)](https://codecov.io/gh/devs-from-matrix/ff4j-web-console) [![dependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console) [![devDependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/dev-status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console?type=dev)
 
+## Pre-requisite
+
+- node >v12
+- npm >v6
+- `npm i -g yarn`
+- `npm i -g @angular/cli`
+
 ## How to start ?
 
 #### Serving whole platform
