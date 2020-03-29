@@ -1,27 +1,67 @@
-# FF4J Web Console [![Build Status](https://travis-ci.com/paul58914080/ff4j-web-console.svg?branch=master)](https://travis-ci.com/paul58914080/ff4j-web-console) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4a7653387c3342338a247ac8b03fc34d)](https://www.codacy.com/app/paul58914080/ff4j-web-console?utm_source=github.com&utm_medium=referral&utm_content=paul58914080/ff4j-web-console&utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/paul58914080/ff4j-web-console/branch/master/graph/badge.svg)](https://codecov.io/gh/paul58914080/ff4j-web-console) [![dependencies Status](https://david-dm.org/paul58914080/ff4j-web-console/status.svg)](https://david-dm.org/paul58914080/ff4j-web-console) [![devDependencies Status](https://david-dm.org/paul58914080/ff4j-web-console/dev-status.svg)](https://david-dm.org/paul58914080/ff4j-web-console?type=dev)
+# FF4J Web Console [![Build Status](https://travis-ci.com/devs-from-matrix/ff4j-web-console.svg?branch=master)](https://travis-ci.com/devs-from-matrix/ff4j-web-console) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7448d01e1b5f4338881454d265034cca)](https://www.codacy.com/gh/devs-from-matrix/ff4j-web-console?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devs-from-matrix/ff4j-web-console&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/devs-from-matrix/ff4j-web-console/branch/master/graph/badge.svg)](https://codecov.io/gh/devs-from-matrix/ff4j-web-console) [![dependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console) [![devDependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/dev-status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console?type=dev)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+## How to start ?
 
-## Development server
+#### Serving whole platform
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`yarn run start`
 
-## Code scaffolding
+> This will serve your app with a mock server. You can find the mock data in `mock/data.json`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Serving micro-frontend
 
-## Build
+- `yarn run start:ff4j-features`
+- `yarn run start:ff4j-properties`
+- `yarn run start:ff4j-dashboards`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+> This will serve your app with a mock server. You can find the mock data in `mock/data.json`
 
-## Running unit tests
+## How to build ?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Building whole platform
 
-## Running end-to-end tests
+- `yarn run build`
+- `yarn run build:prod`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The build artifacts will be stored in the `dist/` directory.
 
-## Further help
+#### Building micro-frontend as elements
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `yarn run build:features-element`
+- `yarn run build:properties-element`
+- `yarn run build:dashboards-element`
+
+The build artifacts will be stored in the `elements/` directory.
+
+## How to test ?
+
+#### Testing whole platform
+
+- `yarn run test:all`
+
+#### Testing micro-frontend
+
+- `yarn run test:ff4j-features`
+- `yarn run test:ff4j-properties`
+- `yarn run test:ff4j-dashboards`
+
+Coverage reports can be found at `coverage/`
+
+## How to contribute
+
+We are really glad you're reading this, because we need volunteer developers to help this project come to fruition.
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, slack or any other method with the owners of this repository before making a change. 
+
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+
+### Pull request process
+
+- Ensure you have performed a self-review of your changes
+- Ensure the new changes generate no new warnings
+- Ensure you have added tests that prove the fix is effective or that the feature works
+- Ensure new and existing unit tests pass locally with my changes
+- Ensure your commit message should follow [conventional commit message guidelines](https://www.conventionalcommits.org/en/v1.0.0/)
+
+[More information](.github/CONTRIBUTING.md)
