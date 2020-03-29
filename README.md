@@ -1,11 +1,4 @@
-# FF4J Web Console [![Build Status](https://travis-ci.com/devs-from-matrix/ff4j-web-console.svg?branch=master)](https://travis-ci.com/devs-from-matrix/ff4j-web-console) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7448d01e1b5f4338881454d265034cca)](https://www.codacy.com/gh/devs-from-matrix/ff4j-web-console?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devs-from-matrix/ff4j-web-console&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/devs-from-matrix/ff4j-web-console/branch/master/graph/badge.svg)](https://codecov.io/gh/devs-from-matrix/ff4j-web-console) [![dependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console) [![devDependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/dev-status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console?type=dev)
-
-## Pre-requisite
-
-- node >v12
-- npm >v6
-- `npm i -g yarn`
-- `npm i -g @angular/cli`
+# FF4J Web Console [![Build Status](https://travis-ci.com/devs-from-matrix/ff4j-web-console.svg?branch=master)](https://travis-ci.com/devs-from-matrix/ff4j-web-console) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7448d01e1b5f4338881454d265034cca)](https://www.codacy.com/gh/devs-from-matrix/ff4j-web-console?utm_source=github.com&utm_medium=referral&utm_content=devs-from-matrix/ff4j-web-console&utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/devs-from-matrix/ff4j-web-console/branch/master/graph/badge.svg)](https://codecov.io/gh/devs-from-matrix/ff4j-web-console) [![dependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console) [![devDependencies Status](https://david-dm.org/devs-from-matrix/ff4j-web-console/dev-status.svg)](https://david-dm.org/devs-from-matrix/ff4j-web-console?type=dev)
 
 ## How to start ?
 
@@ -59,7 +52,7 @@ Coverage reports can be found at `coverage/`
 We are really glad you're reading this, because we need volunteer developers to help this project come to fruition.
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, slack or any other method with the owners of this repository before making a change. 
+email, slack or any other method with the owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
