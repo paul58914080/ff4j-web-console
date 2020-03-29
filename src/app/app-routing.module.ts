@@ -6,6 +6,10 @@ const routes: Routes = [
     path: 'features',
     loadChildren: () => import('../../projects/ff4j-features/src/app/features.module').then((m) => m.FeaturesModule),
   },
+  {
+    path: 'properties',
+    loadChildren: () => import('../../projects/ff4j-properties/src/app/properties.module').then((m) => m.PropertiesModule),
+  },
   { path: '', redirectTo: '/features', pathMatch: 'full' },
   { path: '**', redirectTo: 'features' },
 ];

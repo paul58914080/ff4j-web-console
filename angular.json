@@ -98,11 +98,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
+            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json", "e2e/tsconfig.json"],
             "exclude": ["**/node_modules/**"]
           }
         },
@@ -144,10 +140,7 @@
             "polyfills": "projects/ff4j-features/src/polyfills.ts",
             "tsConfig": "projects/ff4j-features/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/ff4j-features/src/favicon.ico",
-              "projects/ff4j-features/src/assets"
-            ],
+            "assets": ["projects/ff4j-features/src/favicon.ico", "projects/ff4j-features/src/assets"],
             "styles": ["projects/ff4j-features/src/styles.scss"],
             "scripts": [],
             "customWebpackConfig": {
@@ -212,14 +205,10 @@
             "polyfills": "projects/ff4j-features/src/polyfills.ts",
             "tsConfig": "projects/ff4j-features/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-features/karma.conf.js",
-            "assets": [
-              "projects/ff4j-features/src/favicon.ico",
-              "projects/ff4j-features/src/assets"
-            ],
+            "assets": ["projects/ff4j-features/src/favicon.ico", "projects/ff4j-features/src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": [],
             "codeCoverage": true
-
           }
         },
         "lint": {
@@ -267,10 +256,7 @@
             "polyfills": "projects/ff4j-properties/src/polyfills.ts",
             "tsConfig": "projects/ff4j-properties/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/ff4j-properties/src/favicon.ico",
-              "projects/ff4j-properties/src/assets"
-            ],
+            "assets": ["projects/ff4j-properties/src/favicon.ico", "projects/ff4j-properties/src/assets"],
             "styles": ["projects/ff4j-properties/src/styles.scss"],
             "scripts": [],
             "customWebpackConfig": {
@@ -335,12 +321,10 @@
             "polyfills": "projects/ff4j-properties/src/polyfills.ts",
             "tsConfig": "projects/ff4j-properties/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-properties/karma.conf.js",
-            "assets": [
-              "projects/ff4j-properties/src/favicon.ico",
-              "projects/ff4j-properties/src/assets"
-            ],
-            "styles": ["projects/ff4j-properties/src/styles.scss"],
-            "scripts": []
+            "assets": ["projects/ff4j-properties/src/favicon.ico", "projects/ff4j-properties/src/assets"],
+            "styles": ["src/styles.scss"],
+            "scripts": [],
+            "codeCoverage": true
           }
         },
         "lint": {
@@ -388,10 +372,7 @@
             "polyfills": "projects/ff4j-dashboards/src/polyfills.ts",
             "tsConfig": "projects/ff4j-dashboards/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/ff4j-dashboards/src/favicon.ico",
-              "projects/ff4j-dashboards/src/assets"
-            ],
+            "assets": ["projects/ff4j-dashboards/src/favicon.ico", "projects/ff4j-dashboards/src/assets"],
             "styles": ["projects/ff4j-dashboards/src/styles.scss"],
             "scripts": [],
             "customWebpackConfig": {
@@ -456,10 +437,7 @@
             "polyfills": "projects/ff4j-dashboards/src/polyfills.ts",
             "tsConfig": "projects/ff4j-dashboards/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-dashboards/karma.conf.js",
-            "assets": [
-              "projects/ff4j-dashboards/src/favicon.ico",
-              "projects/ff4j-dashboards/src/assets"
-            ],
+            "assets": ["projects/ff4j-dashboards/src/favicon.ico", "projects/ff4j-dashboards/src/assets"],
             "styles": ["projects/ff4j-dashboards/src/styles.scss"],
             "scripts": []
           }
