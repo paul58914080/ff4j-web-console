@@ -1,7 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-
+title: '[New Feature]'
+labels: ':rocket: enhancement'
+assignees: paul58914080
 ---
 
 **Is your feature request related to a problem? Please describe.**
