@@ -322,7 +322,7 @@
             "tsConfig": "projects/ff4j-properties/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-properties/karma.conf.js",
             "assets": ["projects/ff4j-properties/src/favicon.ico", "projects/ff4j-properties/src/assets"],
-            "styles": ["projects/ff4j-properties/src/styles.scss"],
+            "styles": ["src/styles.scss"],
             "scripts": [],
             "codeCoverage": true
           }
