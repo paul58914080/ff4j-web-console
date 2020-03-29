@@ -1,5 +1,5 @@
 module.exports = {
   output: {
-    jsonpFunction: "webpackJsonpFf4jDashboard",
+    jsonpFunction: "webpackJsonpFf4jDashboards",
   },
 };
