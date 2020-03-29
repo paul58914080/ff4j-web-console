@@ -1,11 +1,3 @@
----
-name: PULL_REQUEST_TEMPLATE
-about: To be used for pull requests
-title: ''
-labels: ':rocket: enhancement'
-assignees: ''
----
-
 # Description
 
 <!-- Description about this pull request -->
