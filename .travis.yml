@@ -20,4 +20,4 @@ script:
   - ng test --watch=false
 after_success:
   - codecov
-  - ng deploy --base-href=https://paul58914080.github.io/ff4j-web-console/ --message="docs auto generated commit"
+  - ng deploy --base-href=https://devs-from-matrix.github.io/ff4j-web-console/ --message="docs auto generated commit"
