@@ -1,11 +1,3 @@
----
-name: PULL_REQUEST_TEMPLATE
-about: To be used for pull requests
-title: '[PR]'
-labels: ':speech_balloon: code review'
-assignees: paul58914080
----
-
 # Description
 
 <!-- Description about this pull request -->

@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('ff4j-dashboard app is running!');
+    expect(page.getTitleText()).toEqual('Dashboard works !!');
   });
 
   afterEach(async () => {
