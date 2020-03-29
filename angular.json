@@ -141,7 +141,7 @@
             "tsConfig": "projects/ff4j-features/tsconfig.app.json",
             "aot": true,
             "assets": ["projects/ff4j-features/src/favicon.ico", "projects/ff4j-features/src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles/ff4j.scss"],
             "scripts": [],
             "customWebpackConfig": {
               "path": "projects/ff4j-features/build/extra-webpack.config.js",
@@ -207,7 +207,7 @@
             "tsConfig": "projects/ff4j-features/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-features/karma.conf.js",
             "assets": ["projects/ff4j-features/src/favicon.ico", "projects/ff4j-features/src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles/ff4j.scss"],
             "scripts": [],
             "codeCoverage": true
           }
@@ -258,7 +258,7 @@
             "tsConfig": "projects/ff4j-properties/tsconfig.app.json",
             "aot": true,
             "assets": ["projects/ff4j-properties/src/favicon.ico", "projects/ff4j-properties/src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles/ff4j.scss"],
             "scripts": [],
             "customWebpackConfig": {
               "path": "projects/ff4j-features/build/extra-webpack.config.js",
@@ -324,7 +324,7 @@
             "tsConfig": "projects/ff4j-properties/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-properties/karma.conf.js",
             "assets": ["projects/ff4j-properties/src/favicon.ico", "projects/ff4j-properties/src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles/ff4j.scss"],
             "scripts": [],
             "codeCoverage": true
           }
@@ -375,7 +375,7 @@
             "tsConfig": "projects/ff4j-dashboards/tsconfig.app.json",
             "aot": true,
             "assets": ["projects/ff4j-dashboards/src/favicon.ico", "projects/ff4j-dashboards/src/assets"],
-            "styles": ["projects/ff4j-dashboards/src/styles.scss"],
+            "styles": ["src/styles/ff4j.scss"],
             "scripts": [],
             "customWebpackConfig": {
               "path": "projects/ff4j-dashboards/build/extra-webpack.config.js",
@@ -441,8 +441,9 @@
             "tsConfig": "projects/ff4j-dashboards/tsconfig.spec.json",
             "karmaConfig": "projects/ff4j-dashboards/karma.conf.js",
             "assets": ["projects/ff4j-dashboards/src/favicon.ico", "projects/ff4j-dashboards/src/assets"],
-            "styles": ["projects/ff4j-dashboards/src/styles.scss"],
-            "scripts": []
+            "styles": ["src/styles/ff4j.scss"],
+            "scripts": [],
+            "codeCoverage": true
           }
         },
         "lint": {
