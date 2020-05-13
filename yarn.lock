@@ -14,14 +14,6 @@
     ts-node "^8.5.2"
     webpack-merge "^4.2.1"
 
-"@angular-devkit/architect@0.901.4":
-  version "0.901.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.901.4.tgz#10bef514b1101900f1e404d9bd991a6c0b221afe"
-  integrity sha512-w4RMj7eLhUSh70HUy5tW4EXjLQFXk0Lfr9WiSy5gvPGp+zzYxknI+Wn4Xid1wU/WS+4tuMv5nJIaNaH2sABESQ==
-  dependencies:
-    "@angular-devkit/core" "9.1.4"
-    rxjs "6.5.4"
-
 "@angular-devkit/architect@0.901.5", "@angular-devkit/architect@>=0.900.0 < 0.1000.0":
   version "0.901.5"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.901.5.tgz#148940d87bd6b4c09ca3aaba7f5cae4e11e44a94"
@@ -116,17 +108,6 @@
     "@angular-devkit/architect" "0.901.5"
     "@angular-devkit/core" "9.1.5"
     rxjs "6.5.4"
-
-"@angular-devkit/core@9.1.4":
-  version "9.1.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-9.1.4.tgz#97bb5681471ac40843167f2387b23e92a3e21ce4"
-  integrity sha512-OPFQDmT4XabLMSRDgmnzedlOrc83DzQIgLcfoh/UhZ7aJKf/2Vq4l09p/DkMNI36vN5BRL0zDZt7TjvKNgyYgA==
-  dependencies:
-    ajv "6.12.0"
-    fast-json-stable-stringify "2.1.0"
-    magic-string "0.25.7"
-    rxjs "6.5.4"
-    source-map "0.7.3"
 
 "@angular-devkit/core@9.1.5", "@angular-devkit/core@^9.0.0":
   version "9.1.5"
@@ -4758,10 +4739,10 @@ html-tags@^3.1.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
   integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
 
-htmlhint@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-0.11.0.tgz#d2a315ac7e3371b2bb08373841e85e814b9ccbe5"
-  integrity sha512-uXuRyVhQa0HlNmZg5LJ1BRJvRq5f7IJL/34tItHhZr9re15pwaqAuLUAIcqtwd1bLUCE++7HVPtR+NSReFW0iA==
+htmlhint@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-0.12.0.tgz#b3317de8d877d0b7b4ddb11c4d841b9dc5d8dac6"
+  integrity sha512-PXEm6xzUj5rmpws1h84OU5NlxDFaeVf+aXA7qQ+9CUD+L1N4eivXtUj2W35JBqF/sdQGdxiiRJbM8cRW3St7Fg==
   dependencies:
     async "2.6.1"
     colors "1.3.2"
