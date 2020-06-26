@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 export class FeaturesBrowserModule {
   constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
+  ngDoBootstrap(): any {
     const ff4jFeaturesElement = createCustomElement(FeaturesComponent, {injector: this.injector});
     customElements.define('ff4j-features-element', ff4jFeaturesElement);
   }

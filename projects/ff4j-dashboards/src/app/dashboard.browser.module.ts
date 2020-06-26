@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 export class DashboardBrowserModule {
   constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
+  ngDoBootstrap(): any {
     const dashboardElement = createCustomElement(DashboardComponent, {
       injector: this.injector,
     });

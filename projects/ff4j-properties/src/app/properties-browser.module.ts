@@ -13,7 +13,7 @@ import { PropertiesModule } from './properties.module';
 export class PropertiesBrowserModule {
   constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
+  ngDoBootstrap(): any {
     const ff4jPropertiesElement = createCustomElement(PropertiesComponent, { injector: this.injector });
     customElements.define('ff4j-properties-element', ff4jPropertiesElement);
   }
