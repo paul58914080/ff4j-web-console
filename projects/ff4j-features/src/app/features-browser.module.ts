@@ -8,13 +8,13 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [BrowserModule, FeaturesModule, RouterModule.forRoot([])],
-  bootstrap: environment.production ? [] : [FeaturesComponent]
+  bootstrap: environment.production ? [] : [FeaturesComponent],
 })
 export class FeaturesBrowserModule {
   constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
-    const ff4jFeaturesElement = createCustomElement(FeaturesComponent, {injector: this.injector});
+  ngDoBootstrap(): void {
+    const ff4jFeaturesElement = createCustomElement(FeaturesComponent, { injector: this.injector });
     customElements.define('ff4j-features-element', ff4jFeaturesElement);
   }
 }
