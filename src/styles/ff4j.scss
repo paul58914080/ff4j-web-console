@@ -1,18 +1,14 @@
-/*! Custom Bootstrap 4 Theme
- *
- *  Built on top of Bootstrap 4 (https://getbootstrap.com)
- *
- *  Credits:
- *   - Built with the Bootstrap Theme Kit by HackerThemes (https://hackerthemes.com)
- *   - Paul WILLIAMS (https://github.com/paul58914080)
- */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800|Overpass:400,600,700&display=swap");
-@import "ff4j-variables";
-@import "~bootstrap/scss/bootstrap";
-@import "ff4j-styles";
+@import '~bootstrap/scss/bootstrap';
+@import 'material-ff4j-dark-theme';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'ff4j-variables.scss';
 
-head,
+html,
 body {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background: $background-color;
+  color: $font-color;
 }
