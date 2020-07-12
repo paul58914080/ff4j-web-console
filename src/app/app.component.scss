@@ -1,6 +1,55 @@
 @import '../styles/ff4j-variables';
 
-.jumbotron {
-  background: $primary;
-  color: #ffffff;
+$border-size: 3px;
+
+.mat-toolbar.mat-primary {
+  background-color: #363636;
+}
+
+mat-toolbar {
+  $nav-bar-height: 70px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  position: fixed;
+  top: 0;
+
+  .links {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  a {
+    align-items: center;
+    color: $font-color;
+    display: flex;
+    font-size: 0.8em;
+    height: 100%;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  a &:hover {
+    color: #9bdfc7;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .router-link-active {
+    border-bottom: $border-size solid $ff4j-green;
+    color: $ff4j-green;
+    padding-top: $border-size;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-icon.mat-accent {
+  font-size: 45px;
+  margin-right: 20px;
+  margin-top: -20px;
 }

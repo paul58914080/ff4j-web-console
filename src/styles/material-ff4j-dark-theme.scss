@@ -1,0 +1,126 @@
+@import '~@angular/material/theming';
+
+$fontConfig: (
+  display-4: mat-typography-level(112px, 112px, 300, 'Roboto', -0.0134em),
+  display-3: mat-typography-level(56px, 56px, 400, 'Roboto', -0.0089em),
+  display-2: mat-typography-level(45px, 48px, 400, 'Roboto', 0em),
+  display-1: mat-typography-level(34px, 40px, 400, 'Roboto', 0.0074em),
+  headline: mat-typography-level(30px, 43px, 400, 'Roboto', 0em),
+  title: mat-typography-level(24px, 32px, 500, 'Roboto', 0.0104em),
+  subheading-2: mat-typography-level(16px, 24px, 400, 'Roboto', 0.0156em),
+  subheading-1: mat-typography-level(14px, 24px, 400, 'Roboto', 0.0071em),
+  body-2: mat-typography-level(15px, 20px, 400, 'Roboto', 0.0167em),
+  body-1: mat-typography-level(14px, 20px, 400, 'Roboto', 0.0179em),
+  button: mat-typography-level(14px, 14px, 500, 'Roboto', 0.0893em),
+  caption: mat-typography-level(12px, 20px, 300, 'Roboto', 0.0333em),
+  input: mat-typography-level(inherit, 1.125, 300, 'Roboto', 1.5px),
+);
+
+@include mat-core($fontConfig);
+
+$ff4j-dark: (
+  50: #e3e3e3,
+  100: #b8b8b8,
+  200: #898989,
+  300: #595959,
+  400: #363636,
+  500: #121212,
+  600: #101010,
+  700: #0d0d0d,
+  800: #0a0a0a,
+  900: #050505,
+  A100: #101010,
+  A200: #0d0d0d,
+  A400: #0a0a0a,
+  A700: #050505,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #ffffff,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$ff4j-green: (
+  50: #e7f7f2,
+  100: #c3ecdd,
+  200: #9bdfc7,
+  300: #72d2b1,
+  400: #54c9a0,
+  500: #36bf8f,
+  600: #30b987,
+  700: #29b17c,
+  800: #22a972,
+  900: #169b60,
+  A100: #afffcb,
+  A200: #72ffa4,
+  A400: #58ff94,
+  A700: #49ff8a,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$ff4j-warn: (
+  50: #ffefe0,
+  100: #ffd7b3,
+  200: #ffbd80,
+  300: #ffa24d,
+  400: #ff8e26,
+  500: #ff7a00,
+  600: #ff7200,
+  700: #ff6700,
+  800: #ff5d00,
+  900: #ff4a00,
+  A100: #ffffff,
+  A200: #ffdfdd,
+  A400: #ffc6c3,
+  A700: #ffb8b4,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$custom-theme-primary: mat-palette($ff4j-dark);
+$custom-theme-accent: mat-palette($ff4j-green);
+$custom-theme-warn: mat-palette($ff4j-warn);
+
+$custom-theme: mat-dark-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+
+@include angular-material-theme($custom-theme);
