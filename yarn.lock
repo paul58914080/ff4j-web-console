@@ -248,12 +248,12 @@
     rxjs "6.5.4"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-10.0.2.tgz#a387437b2c46ffd7883425cf08ef0365ea1e8374"
-  integrity sha512-BUUWAreHoxk4Z91Xhr+wtFUhK6+7AOczsIxlZmJnQwSUhN2ZdiDjOXeO3NFkDdL8CtNOz5khGu2iNBqn08FpUw==
+"@angular-devkit/schematics@10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-10.0.3.tgz#84e1a337692ba36cbae145b5e678592878df722f"
+  integrity sha512-TjA2ZSPCgUK9l4FiRTIQY7DceXMAvNzOMWffy9o3kv2HPtxG9kuBrQXk++Z99zpylK0cAsugV7t/5ANpUkrIiA==
   dependencies:
-    "@angular-devkit/core" "10.0.2"
+    "@angular-devkit/core" "10.0.3"
     ora "4.0.4"
     rxjs "6.5.5"
 
@@ -273,16 +273,16 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
-"@angular/cli@~10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-10.0.2.tgz#c25323122f973f6eaad2fe6f7e308548690d0047"
-  integrity sha512-L/uLUrZNIwbYzIeU9R3SC2hblDgtxP57msmRjoOQBpSzwlOME+z0wlCXPv+h9NOzNPvVVbEtLtjBgZxUw0IHzg==
+"@angular/cli@~10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-10.0.3.tgz#0b8c5e263deaa63d05b6efda790a2000b8a24a85"
+  integrity sha512-ONK8YG20KuakQetY0lPKDAOA3uBoLurdpSfFspFkcECyDimwJYSEydi3FUnCxEexeoKvrQWcol+q+u9YPoHCyg==
   dependencies:
-    "@angular-devkit/architect" "0.1000.2"
-    "@angular-devkit/core" "10.0.2"
-    "@angular-devkit/schematics" "10.0.2"
-    "@schematics/angular" "10.0.2"
-    "@schematics/update" "0.1000.2"
+    "@angular-devkit/architect" "0.1000.3"
+    "@angular-devkit/core" "10.0.3"
+    "@angular-devkit/schematics" "10.0.3"
+    "@schematics/angular" "10.0.3"
+    "@schematics/update" "0.1000.3"
     "@yarnpkg/lockfile" "1.1.0"
     ansi-colors "4.1.1"
     debug "4.1.1"
@@ -363,10 +363,10 @@
   dependencies:
     tslib "^2.0.0"
 
-"@angular/language-service@~10.0.3":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-10.0.3.tgz#ddc66ceca5285b25a5503c97ac15dccf0744f951"
-  integrity sha512-xT5utLyPpcicVIYkM2cngVloxIyYLQZ+rnH4nqjq4QGbboezPC2MBsVpivRGFN7p8xHtNysGeOZc8O8FuWthhg==
+"@angular/language-service@~10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-10.0.4.tgz#fe61e5a82c494a3aaabcca4997aff94fa891d12e"
+  integrity sha512-m5dWL1Lg9M4kDA/kjpdyKsrx9arbIebrgsSzr/QG7cPon6SQMRs9ECZBM+3GalkQghrPO1mLgnrUwFBUH2QNPw==
 
 "@angular/material@^10.0.1":
   version "10.0.1"
@@ -1357,21 +1357,21 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@schematics/angular@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-10.0.2.tgz#e8ef09f9c1833aaa9c109164c16e2bd458ba814c"
-  integrity sha512-viSf1HQH2vxZAonkfdAjJ/0Z8VgKptsi4UYtJDwabKRbbyp2EQ/vhEPI/ddV4QgrQqR8mkOl7nu8JqL2M0+v6A==
+"@schematics/angular@10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-10.0.3.tgz#a4d54389918a7f9c82345d4f639d930f22b62c6b"
+  integrity sha512-Or2pCqjpPbAvmbxtfMosGwQbNbSL4xodK5Key7678ZAPGB+rcxrVkBI9yxEJ/qzF/LrmMoKqy0JCmVLK7Grpog==
   dependencies:
-    "@angular-devkit/core" "10.0.2"
-    "@angular-devkit/schematics" "10.0.2"
+    "@angular-devkit/core" "10.0.3"
+    "@angular-devkit/schematics" "10.0.3"
 
-"@schematics/update@0.1000.2":
-  version "0.1000.2"
-  resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.1000.2.tgz#012441e3c1b91a78c7b3bccefc252c1dd6aa8b1e"
-  integrity sha512-6PSJ+WexBqY0ESo0Kp6fa9wPWAXKE9oyLNjISJ1S9QKCVowoHa8FV+7BalVOUYwUhnUzwPCF6n7PqcJiZR632g==
+"@schematics/update@0.1000.3":
+  version "0.1000.3"
+  resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.1000.3.tgz#d361f23ae49cd3ac9b547b6f4c2470d7ca86aabd"
+  integrity sha512-Nncdklmzi1tyzkoAh7GlSslxriRhftlmfqPVmFHrrPRttYACtT/QH5qcWsrPgTPpHGINYEHrPjpeljsMoMchBQ==
   dependencies:
-    "@angular-devkit/core" "10.0.2"
-    "@angular-devkit/schematics" "10.0.2"
+    "@angular-devkit/core" "10.0.3"
+    "@angular-devkit/schematics" "10.0.3"
     "@yarnpkg/lockfile" "1.1.0"
     ini "1.3.5"
     npm-package-arg "^8.0.0"
@@ -6707,9 +6707,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@4, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@^2.2.0:
   version "2.2.0"
