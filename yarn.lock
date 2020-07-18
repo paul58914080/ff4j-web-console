@@ -14,14 +14,6 @@
     ts-node "^8.5.2"
     webpack-merge "^4.2.1"
 
-"@angular-devkit/architect@0.1000.2":
-  version "0.1000.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1000.2.tgz#ca62e25f0e845ff63c6a1ba942a45caf1d085218"
-  integrity sha512-n1e/ZdE70C6hDauTWLAiofKDI6m88nhb91Ddqum0eeUh3HL3Ppv/sT9O+UYsab3gIdIOFJwHBpZ96SM/2Ja5NA==
-  dependencies:
-    "@angular-devkit/core" "10.0.2"
-    rxjs "6.5.5"
-
 "@angular-devkit/architect@0.1000.3":
   version "0.1000.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1000.3.tgz#f23ea9d370edac8b0dd979d2574b12aa9923c3d4"
@@ -214,17 +206,6 @@
     "@angular-devkit/architect" "0.901.9"
     "@angular-devkit/core" "9.1.9"
     rxjs "6.5.4"
-
-"@angular-devkit/core@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-10.0.2.tgz#5f14afab52bbb6a21757e4f489f76e0defcb9aa8"
-  integrity sha512-gD8iUP28GscsHqGKKu+NtX97bt7aXDZmIYqWTv4SThrcsPYY2A4tBw+NBbNAwjHkNfn4jflpqTmcN9gBAoLoSg==
-  dependencies:
-    ajv "6.12.2"
-    fast-json-stable-stringify "2.1.0"
-    magic-string "0.25.7"
-    rxjs "6.5.5"
-    source-map "0.7.3"
 
 "@angular-devkit/core@10.0.3":
   version "10.0.3"
@@ -10841,10 +10822,10 @@ typescript@3.6.5:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.5.tgz#dae20114a7b4ff4bd642db9c8c699f2953e8bbdb"
   integrity sha512-BEjlc0Z06ORZKbtcxGrIvvwYs5hAnuo6TKdNFL55frVDlB+na3z5bsLhFaIxmT+dPWgBIjMo6aNnTOgHHmHgiQ==
 
-typescript@~3.9.6:
-  version "3.9.6"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.6.tgz#8f3e0198a34c3ae17091b35571d3afd31999365a"
-  integrity sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
+typescript@~3.9.7:
+  version "3.9.7"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
+  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
 ua-parser-js@0.7.21:
   version "0.7.21"

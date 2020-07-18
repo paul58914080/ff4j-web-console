@@ -102,7 +102,7 @@
     "stylelint-scss": "^3.18.0",
     "ts-node": "~8.10.2",
     "tslint": "~6.1.2",
-    "typescript": "~3.9.6"
+    "typescript": "~3.9.7"
   },
   "resolutions": {
     "karma/optimist/minimist": "~1.2.5",
