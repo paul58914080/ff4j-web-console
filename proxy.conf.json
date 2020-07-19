@@ -1,5 +1,5 @@
 {
-  "/ff4j/store/features": {
+  "/": {
     "target": "http://localhost:3000",
     "secure": false
   }

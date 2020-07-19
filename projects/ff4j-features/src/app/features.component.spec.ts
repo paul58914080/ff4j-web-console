@@ -34,7 +34,7 @@ describe('FeaturesComponent', () => {
 
   it('should have requested to get features from RESTful api', () => {
     // Given
-    const features: Feature[] = require('../../../../mock/data.json').ff4j.store.features;
+    const features: Feature[] = require('../../../../mock/data.json').features;
     spyOn(featureService, 'getFeatures').and.returnValues(of(features));
     // When
     fixture.detectChanges();
