@@ -1,0 +1,35 @@
+{
+  "ff4j": {
+    "store": {
+      "features": [
+        {
+          "uid": "admin",
+          "enable": false,
+          "description": "the admin page",
+          "group": "admin",
+          "permissions": ["ROLE_ADMIN"],
+          "flippingStrategy": {
+            "type": "org.ff4j.strategy.PonderationStrategy",
+            "initParams": {
+              "weight": "0.0"
+            }
+          },
+          "customProperties": {
+            "SampleProperty": {
+              "name": "SampleProperty",
+              "description": "",
+              "type": "org.ff4j.property.PropertyString",
+              "value": "go!",
+              "fixedValues": []
+            }
+          }
+        },
+        {
+          "uid": "test",
+          "enable": false,
+          "description": "the test page"
+        }
+      ]
+    }
+  }
+}
