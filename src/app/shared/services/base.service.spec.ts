@@ -7,14 +7,14 @@ describe('BaseService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
   it('should be created', () => {
     environment.apiBaseUrl = '';
-    const service: BaseService = TestBed.get(BaseService);
+    const service: BaseService = TestBed.inject(BaseService);
     expect(service).toBeTruthy();
     expect(service.getBaseUrl()).toBe('');
   });
 
-  it('should be return the environment specific baseUrl', () => {
+  it('should be able to return the environment specific baseUrl', () => {
     environment.apiBaseUrl = 'http://localhost:3000';
-    const service: BaseService = TestBed.get(BaseService);
+    const service: BaseService = TestBed.inject(BaseService);
     expect(service).toBeTruthy();
     expect(service.getBaseUrl()).toBe('http://localhost:3000');
   });
