@@ -1,4 +1,5 @@
 @import '~@angular/material/theming';
+@import 'ff4j-variables';
 
 $fontConfig: (
   display-4: mat-typography-level(112px, 112px, 300, 'Roboto', -0.0134em),
@@ -117,10 +118,55 @@ $ff4j-warn: (
   ),
 );
 
-$custom-theme-primary: mat-palette($ff4j-dark);
-$custom-theme-accent: mat-palette($ff4j-green);
-$custom-theme-warn: mat-palette($ff4j-warn);
+$ff4j-light: (
+  50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #121212,
+    600: #101010,
+    700: #0d0d0d,
+    800: #0a0a0a,
+    900: #050505,
+    A100: #101010,
+    A200: #0d0d0d,
+    A400: #0a0a0a,
+    A700: #050505,
+  ),
+);
 
-$custom-theme: mat-dark-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+$light-theme-primary: mat-palette($ff4j-light);
+$light-theme-accent: mat-palette($ff4j-green);
+$light-theme-warn: mat-palette($ff4j-warn);
 
-@include angular-material-theme($custom-theme);
+$light-theme: mat-light-theme($light-theme-primary, $light-theme-accent, $light-theme-warn);
+
+@include angular-material-theme($light-theme);
+
+.dark-theme {
+  $dark-theme-primary: mat-palette($ff4j-dark);
+  $dark-theme-accent: mat-palette($ff4j-green);
+  $dark-theme-warn: mat-palette($ff4j-warn);
+
+  $dark-theme: mat-dark-theme($dark-theme-primary, $dark-theme-accent, $dark-theme-warn);
+
+  @include angular-material-theme($dark-theme);
+  background: $background-color;
+  color: $font-color;
+}

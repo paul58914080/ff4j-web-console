@@ -2,10 +2,6 @@
 
 $border-size: 3px;
 
-.mat-toolbar.mat-primary {
-  background-color: #363636;
-}
-
 mat-toolbar {
   $nav-bar-height: 70px;
   font-weight: 300;
@@ -23,7 +19,7 @@ mat-toolbar {
 
   a {
     align-items: center;
-    color: $font-color;
+    // color: $font-color;
     display: flex;
     font-size: 0.8em;
     height: 100%;
