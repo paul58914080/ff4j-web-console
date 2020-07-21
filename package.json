@@ -21,9 +21,9 @@
   "private": false,
   "scripts": {
     "ng": "ng",
-    "start": "run-p mock:server 'ng serve'",
+    "start": "run-p mock:server \"ng serve\"",
     "start:ff4j-dashboards": "run-p mock:server 'ng serve ff4j-dashboards --port=4201'",
-    "start:ff4j-features": "run-p mock:server 'ng serve ff4j-features --port=4202'",
+    "start:ff4j-features": "run-p mock:server \"ng serve ff4j-features --port=4202\"",
     "start:ff4j-properties": "run-p mock:server 'ng serve ff4j-properties --port=4203'",
     "build": "ng build",
     "build:prod": "ng build --prod --output-hashing none",
