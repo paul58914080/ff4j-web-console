@@ -1,3 +1,15 @@
-$font-color: #ffffff;
-$background-color: #121212;
+$font-dark-color: #ffffff;
+$background-dark-color: #121212;
+$font-light-color: #121212;
+$background-light-color: #ffffff;
 $ff4j-green: #36bf8f;
+
+@mixin theme-colors($dark-theme: true) {
+  @if $dark-theme {
+    background-color: $background-dark-color;
+    color: $font-dark-color;
+  } @else {
+    background-color: $background-light-color;
+    color: $font-light-color;
+  }
+}

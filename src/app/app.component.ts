@@ -1,21 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ThemeService } from '../app/shared/services/theme.service';
+
 @Component({
   selector: 'ff4j-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  isDarkTheme: Observable<boolean>;
+  isLightTheme = false;
 
-  constructor(private themeService: ThemeService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.isDarkTheme = this.themeService.isDarkTheme;
+    this.isLightTheme = false;
   }
 
-  toggleDarkTheme(checked: boolean): void {
-    this.themeService.setDarkTheme(checked);
+  toggleTheme(checked: boolean): void {
+    this.isLightTheme = checked;
   }
 }

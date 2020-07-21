@@ -134,11 +134,11 @@ $ff4j-light: (
   A400: #ffffff,
   A700: #ffffff,
   contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
+    50: #121212,
+    100: #121212,
+    200: #121212,
+    300: #121212,
+    400: #121212,
     500: #121212,
     600: #101010,
     700: #0d0d0d,
@@ -151,22 +151,36 @@ $ff4j-light: (
   ),
 );
 
-$light-theme-primary: mat-palette($ff4j-light);
-$light-theme-accent: mat-palette($ff4j-green);
-$light-theme-warn: mat-palette($ff4j-warn);
+.light-theme {
+  $light-theme-primary: mat-palette($ff4j-light);
+  $light-theme-accent: mat-palette($ff4j-green);
+  $light-theme-warn: mat-palette($ff4j-warn);
+  $light-theme: mat-light-theme($light-theme-primary, $light-theme-accent, $light-theme-warn);
+  @include angular-material-theme($light-theme);
+  @include theme-colors($dark-theme: false);
 
-$light-theme: mat-light-theme($light-theme-primary, $light-theme-accent, $light-theme-warn);
+  .mat-toolbar.mat-primary {
+    background-color: #f9f9f9;
+  }
 
-@include angular-material-theme($light-theme);
+  a {
+    color: #121212;
+  }
+}
 
 .dark-theme {
   $dark-theme-primary: mat-palette($ff4j-dark);
   $dark-theme-accent: mat-palette($ff4j-green);
   $dark-theme-warn: mat-palette($ff4j-warn);
-
   $dark-theme: mat-dark-theme($dark-theme-primary, $dark-theme-accent, $dark-theme-warn);
-
   @include angular-material-theme($dark-theme);
-  background: $background-color;
-  color: $font-color;
+  @include theme-colors($dark-theme: true);
+
+  .mat-toolbar.mat-primary {
+    background-color: #363636;
+  }
+
+  a {
+    color: #ffffff;
+  }
 }
