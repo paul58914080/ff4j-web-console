@@ -23,7 +23,7 @@ export class TestContext<T, H> {
 }
 
 export function initContext<T, H>(testedType: Type<T>, hostType: Type<H>, moduleMetadata: TestModuleMetadata = {}): void {
-  beforeEach(function (): void {
+  beforeEach(function(): void {
     /*
      * I feel dirty writing this, but Jasmine creates plain objects
      * and modifying their prototype is definitely a bad idea
