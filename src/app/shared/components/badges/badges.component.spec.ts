@@ -14,13 +14,13 @@ describe('BadgesComponent', () => {
   type Context = TestContext<BadgesComponent, TesteeBadgeComponent>;
   initContext(BadgesComponent, TesteeBadgeComponent);
 
-  it('should create', function (this: Context): void {
+  it('should create', function(this: Context): void {
     this.fixture.detectChanges();
     expect(this.hostComponent).toBeTruthy();
     expect(this.testedComponent).toBeTruthy();
   });
 
-  it('should have propagate the input values for property values and maxToShow', function (this: Context): void {
+  it('should have propagate the input values for property values and maxToShow', function(this: Context): void {
     this.fixture.detectChanges();
     expect(this.testedComponent.values).toEqual(['1', '2', '3']);
     expect(this.testedComponent.maxToShow).toEqual(1);

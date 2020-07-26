@@ -31,7 +31,7 @@ export function initContext<T, H>(testedType: Type<T>, hostType: Type<H>, module
     Object.assign(this, TestContext.prototype);
   });
 
-  beforeEach(async(function (this: TestContext<T, H>): void {
+  beforeEach(async(function(this: TestContext<T, H>): void {
     const declarations = [testedType, hostType];
     if (moduleMetadata && moduleMetadata.declarations) {
       declarations.push(...moduleMetadata.declarations);
@@ -43,7 +43,7 @@ export function initContext<T, H>(testedType: Type<T>, hostType: Type<H>, module
     }).compileComponents();
   }));
 
-  beforeEach(function (this: TestContext<T, H>): void {
+  beforeEach(function(this: TestContext<T, H>): void {
     this.fixture = TestBed.createComponent(hostType);
     this.fixture.detectChanges();
     this.hostComponent = this.fixture.componentInstance;
@@ -54,7 +54,7 @@ export function initContext<T, H>(testedType: Type<T>, hostType: Type<H>, module
     this.testedElement = testedDebugElement.nativeElement;
   });
 
-  afterEach(function (this: TestContext<T, H>): void {
+  afterEach(function(this: TestContext<T, H>): void {
     if (this.fixture) {
       this.fixture.destroy();
       this.fixture.nativeElement.remove();
