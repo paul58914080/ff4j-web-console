@@ -1,0 +1,16 @@
+<div class="ff4j-badges">
+  <span *ngIf="!showAll" class="d-flex align-items-center">
+    <mat-chip-list>
+      <mat-chip color="primary" class="badge badge-pill badge-secondary label m-1" *ngFor="let value of values | slice: 0:maxToShow">
+        {{ value }}
+      </mat-chip>
+    </mat-chip-list>
+    <span class="ml-1" *ngIf="values?.length > maxToShow">..<a class="cursor-pointer" (click)="showAll = true">more</a></span>
+  </span>
+  <span *ngIf="showAll" class="d-flex align-items-center">
+    <mat-chip-list>
+      <mat-chip color="primary" class="badge badge-pill badge-secondary label m-1" *ngFor="let value of values"> {{ value }} </mat-chip>
+    </mat-chip-list>
+    <span class="ml-1">..<a class="cursor-pointer" (click)="showAll = false">less</a></span>
+  </span>
+</div>
