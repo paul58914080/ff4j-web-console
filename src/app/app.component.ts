@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
     this.isLightTheme = checked;
   }
 
-  openMenu(){
+  openMenu(): void{
     this.isMenuHidden = false;
   }
-  closeMenu(){
+  closeMenu(): void{
     this.isMenuHidden = true;
   }
 }

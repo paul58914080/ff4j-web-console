@@ -25,48 +25,44 @@ mat-toolbar {
     padding: 0 1em;
   }
 
-  @media screen and (max-width: 600px) 
-  {
-  .links {
-      margin-top: 40px;
+  @media screen and (max-width: 600px) {
+    .links {
       display: block;
-    }
-  
-    a {
-      background: grey;
-    }
-    .sm-more{
-     display: inline;
+      margin-top: 40px;
     }
 
-    .display-active{
+    a {
+      background: #bebebe;
+    }
+
+    .sm-more {
+      display: inline;
+    }
+
+    .display-active {
       display: inline-block;
     }
 
-    .display-none{
+    .display-none {
       display: none;
     }
-
   }
 
-  @media screen and (min-width: 600px) 
-  {
+  @media screen and (min-width: 600px) {
     .links {
-      margin-top: 0;
       display: flex;
+      margin-top: 0;
     }
-  
+
     a {
       background: transparent;
     }
 
-    .sm-more{
+    .sm-more {
       display: none;
     }
-  
   }
 
- 
   a:hover {
     color: #9bdfc7;
     cursor: pointer;
@@ -93,4 +89,3 @@ mat-toolbar {
 .ff4j-body {
   margin-top: 70px;
 }
-
