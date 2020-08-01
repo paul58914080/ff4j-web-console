@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   isLightTheme = false;
+  isMenuHidden = true;
 
   constructor() {}
 
@@ -16,5 +17,12 @@ export class AppComponent implements OnInit {
 
   toggleTheme(checked: boolean): void {
     this.isLightTheme = checked;
+  }
+
+  openMenu(){
+    this.isMenuHidden = false;
+  }
+  closeMenu(){
+    this.isMenuHidden = true;
   }
 }
