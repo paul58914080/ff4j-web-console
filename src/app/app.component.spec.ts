@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { By } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
   let fixture;
@@ -33,5 +34,12 @@ describe('AppComponent', () => {
     expect(component.isLightTheme).toBeTrue();
     component.toggleTheme(false);
     expect(component.isLightTheme).toBeFalse();
+  });
+
+  it('should be able to hide and show the menu', () => {
+    component.openMenu();
+    expect(component.isMenuHidden).toBeFalse();
+    component.closeMenu();
+    expect(component.isMenuHidden).toBeTrue();
   });
 });
