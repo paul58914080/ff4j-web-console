@@ -3,19 +3,21 @@
     <mat-toolbar color="primary">
       <mat-icon color="accent">toggle_on</mat-icon>&nbsp; <span class="d-block d-md-none">FF4J</span>
       <span class="d-none d-sm-none d-md-block">Feature Flipping 4 Java</span> <span class="spacer"></span>
+
       <div class="h-100">
-        <div class="links">
-          <a routerLink="/features" [routerLinkActive]="['router-link-active']">
-            <span class="d-none d-md-block">Features</span> <span class="d-block d-md-none">F</span>
+        <div class="links" [ngClass]="{'display-active':isMenuHidden,'display-none':isMenuHidden}">
+          <a routerLink="/features" [routerLinkActive]="['router-link-active']" (click)="closeMenu()">
+            <span class="d-md-block">Features</span>
           </a>
-          <a routerLink="/properties" [routerLinkActive]="['router-link-active']">
-            <span class="d-none d-md-block">Properties</span> <span class="d-block d-md-none">P</span>
+          <a routerLink="/properties" [routerLinkActive]="['router-link-active']" (click)="closeMenu()">
+            <span class="d-md-block">Properties</span> 
           </a>
-          <a routerLink="/dashboards" [routerLinkActive]="['router-link-active']">
-            <span class="d-none d-md-block">Dashboard</span> <span class="d-block d-md-none">D</span>
+          <a routerLink="/dashboards" [routerLinkActive]="['router-link-active']" (click)="closeMenu()">
+            <span class="d-md-block">Dashboard</span>
           </a>
         </div>
       </div>
+      <span class="more-span" (click)="openMenu()"><mat-icon class="sm-more">more_vert</mat-icon></span>
       <mat-icon>nights_stay</mat-icon>&nbsp;
       <mat-slide-toggle [checked]="isLightTheme" (change)="toggleTheme($event.checked)">
         <mat-icon>wb_sunny</mat-icon>
