@@ -54,7 +54,7 @@
     "@angular/animations": "~10.0.0",
     "@angular/cdk": "^10.0.1",
     "@angular/common": "~10.0.0",
-    "@angular/compiler": "~10.0.0",
+    "@angular/compiler": "~10.0.12",
     "@angular/core": "~10.0.0",
     "@angular/elements": "^10.0.0",
     "@angular/forms": "~10.0.0",
